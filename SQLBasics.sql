@@ -71,8 +71,12 @@ Create table NEWTABLE(
  SingerID int NOT NULL UNIQUE,
  FirstName varchar(255),
  LastName Varchar(255),
+ Age int CHECk (Age >=18),
  Address varchar(255),
- City varchar(255)
+ City varchar(255),
+ songID int NOT NULL,
+ PRIMARY KEY (SingerID);
+ foreign key (songID);
 );
 Drop table NEWTABLE;
 alter table NEWTABLE add AlbumName varchar(255);
